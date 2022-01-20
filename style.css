@@ -35,6 +35,8 @@ main{
     font-family: var(--font);
     background-color:var(--app-background);
     /* background-color:red; */
+   
+    
     
     
    
@@ -47,20 +49,34 @@ main .purple-cylinder{
     border-radius: 0 0 500px 500px;
     height: 650px;
     transform: translate(-100px);
+    /* display: none; */
 }
 
 /* grey cylinder */
-main .grey-cylinder{
-    width: 900px;
-    background-image:linear-gradient(hsl(293, 100%, 63%),hsl(293, 100%, 63%));
-    border-radius: 500px 500px 0 0;
-    /* height: 700px; */
-    /* transform: translate(10px); */
-    position: relative;
-    top:90px;
+
+.grey-cylinder{
     display: none;
-   
 }
+
+main::after{
+    /* border: 2px solid brown; */
+    width: 300px;
+    background-image:linear-gradient(to top right,hsl(264, 100%, 61%,0.03),hsl(293, 100%, 63%,0.03));
+    
+   
+    border-radius: 500px 0 0px 0px;
+    height: 650px;
+    content: "";
+    position: absolute;
+   top:100px;
+    right:0px;
+   z-index: 10;
+    /* display: none; */
+    
+}
+
+
+
 /* to the mobile first  */
 /* followed by the descriptive text */
 /* then the cylinders */
@@ -71,8 +87,9 @@ main .grey-cylinder{
     /* border: 12px solid red; */
     /* border: 2px solid red; */
     border-radius:2rem;
-   
+ 
     width: 1500px;
+  
     
     /* background-color: green; */
     box-shadow: 0 0 0 15px white, 10px 10px 25px 10px rgb(158, 154, 154);
@@ -81,6 +98,7 @@ main .grey-cylinder{
     position: relative;
     top: -122px;
     left: -258px;
+   /* display: none; */
    
     
 }
@@ -253,6 +271,7 @@ input[type='text']{
     position: relative;
     top: -170px;
     left: -307px;
+    z-index: 20;
    
 }
 
@@ -270,3 +289,9 @@ input[type='text']{
 
 
 
+@media (max-width:1330px) {
+     main{
+         flex-direction: column;
+         /* width: ; */
+     }
+}
