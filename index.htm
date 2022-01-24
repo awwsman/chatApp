@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- style sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style2.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -17,63 +18,50 @@
   </head>
   <body>
     <main class="main">
-      <!--display flex-->
-      <section class="purple-cylinder">purple</section>
-      <section class="chatApp">
-        <!--white color set the width and height-->
+      <section class="app-design">
+        <div class="heading">
+          <i class="fas fa-chevron-left"></i>
+          <img src="avatar.jpg" alt="mr samuel" class="avatar" />
+          <div class="profile-details">
+            <h2 class="name">Samuel Green</h2>
+            <p class="status">Availble to Walk</p>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div id="msg-1" class="left-chat">
+          That sounds great. I’d be happy with that.
+        </div>
+        <div id="msg-2" class="left-chat">
+          Could you send over some pictures of your dog, please?
+        </div>
+        <div class="dog-pic">
+          <img src="dog-image-1.jpg" alt="" class="dogs" />
+          <img src="dog-image-2.jpg" alt="" class="dogs" />
+          <img src="dog-image-3.jpg" alt="" class="dogs" />
+        </div>
+        <div id="right">
+          <div id="msg-3" class="right-chat">
+            Here are a few pictures. She’s a happy girl!
+          </div>
+          <div id="msg-4" class="right-chat">Can you make it?</div>
+        </div>
+        <div id="msg-5" class="left-chat">
+          She looks so happy! The time we discussed works. How long shall I take
+          her out for?
+        </div>
+        <div id="half-hour" class="duration">
+          <i class="far fa-circle"></i>
+          <span class="walk">30 Minute Walk</span>
+          <span class="cost">$29</span>
+        </div>
+        <div id="one-hour" class="duration">
+          <i class="far fa-circle"></i>
+          <span class="walk">1 hour Walk</span> <span class="cost">$49</span>
+        </div>
 
-        <div class="app-design">
-          <!--grey color-->
-          <div class="heading">
-            <!--purple color and display flex-->
-            <i class="fas fa-chevron-left"></i>
-            <img src="avatar.jpg" alt="mr samuel" class="avatar" />
-            <div class="profile-details">
-              <h2 class="name">Samuel Green</h2>
-              <p class="status">Availble to Walk</p>
-            </div>
-            <i class="fas fa-ellipsis-v"></i>
-          </div>
-          <div id="msg-1" class="left-chat">
-            That sounds great. I’d be happy with that.
-          </div>
-          <div id="msg-2" class="left-chat">
-            Could you send over some pictures of your dog, please?
-          </div>
-          <div class="dog-pic">
-            <!--display flex, postion right-->
-            <img src="dog-image-1.jpg" alt="" class="dogs" />
-            <img src="dog-image-2.jpg" alt="" class="dogs" />
-            <img src="dog-image-3.jpg" alt="" class="dogs" />
-          </div>
-          <div id="right">
-            <div id="msg-3" class="right-chat">
-              Here are a few pictures. She’s a happy girl!
-            </div>
-            <div id="msg-4" class="right-chat">Can you make it?</div>
-          </div>
-          <div id="msg-5" class="left-chat">
-            She looks so happy! The time we discussed works. How long shall I
-            take her out for?
-          </div>
-          <div id="half-hour" class="duration">
-            <!-- <input type="radio" name="radio" id="radio"> -->
-            <i class="far fa-circle"></i>
-            <span class="walk">30 Minute Walk</span>
-            <span class="cost">$29</span>
-          </div>
-          <div id="one-hour" class="duration">
-
-              <!-- <input type="radio" name="radio" id="radio"> -->
-              <i class="far fa-circle"></i>
-            <span class="walk">1 hour Walk</span> <span class="cost">$49</span>
-          </div>
-
-          <div class="reply">
-            <input type="text" placeholder="Type a message.." />
-            <i class="fas fa-chevron-circle-right"></i>
-            <!-- <i class="fas fa-angle-right"></i> -->
-          </div>
+        <div class="reply">
+          <input type="text" placeholder="Type a message.." />
+          <i class="fas fa-chevron-circle-right"></i>
         </div>
       </section>
 
@@ -85,9 +73,6 @@
           has been completed you can rate your walker and book again all through
           the chat.
         </p>
-      </section>
-      <section class="grey-cylinder">
-hi
       </section>
     </main>
   </body>
