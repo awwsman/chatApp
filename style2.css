@@ -58,8 +58,8 @@ main::after {
   content: "";
   background-image: linear-gradient(
     to top right,
-    hsl(264, 100%, 61%, 0.02),
-    hsl(293, 100%, 63%, 0.02)
+    hsl(264, 100%, 61%, 0.04),
+    hsl(293, 100%, 63%, 0.04)
   );
   border-radius: 500px 100px 0 0;
   position: absolute;
